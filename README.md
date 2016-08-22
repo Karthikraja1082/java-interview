@@ -12,7 +12,7 @@ The application can be started in development mode with the following command:
 mvn spring-boot:run
 ```
 
-This application is an "oversimplified" project management system which contains only two domain models: Employee and Project. Before you proceed to accomplish the tasks below, please analyze the source files for [domain models](https://github.com/talent-seeker/java-interview/tree/topic/src/main/java/edu/ucdavis/afs/model) and [data access object (DAO) interfaces](https://github.com/talent-seeker/java-interview/tree/topic/src/main/java/edu/ucdavis/afs/dao).
+This application is an "oversimplified" project management system which contains only two domain models: [Employee](https://github.com/talent-seeker/java-interview/blob/topic/src/main/java/edu/ucdavis/afs/model/Employee.java) and [Project](https://github.com/talent-seeker/java-interview/blob/topic/src/main/java/edu/ucdavis/afs/model/Project.java). Before you proceed to accomplish the tasks below, please analyze the source files for [domain models](https://github.com/talent-seeker/java-interview/tree/topic/src/main/java/edu/ucdavis/afs/model) and [data access object (DAO) interfaces](https://github.com/talent-seeker/java-interview/tree/topic/src/main/java/edu/ucdavis/afs/dao).
 
 
 ### Functional Requirements
