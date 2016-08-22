@@ -19,30 +19,30 @@ This application is an "oversimplified" project management system which contains
 
 Enhance the current application to implement a Restful API, which will provide the following functionalities:
 
-1. Add new employees to the backend database.
-2. Modify the existing employee information such as phone, email, job title, and etc.
-3. Modify the existing employees' project assignments.
-4. Allow to search for employees by first name, last name or job title.
-5. Given an employee's ID, the API will be able to show the detailed employee information (including employee's project assignments).
+* Add new employees to the backend database.
+* Modify the existing employee information such as phone, email, job title, and etc.
+* Modify the existing employees' project assignments.
+* Allow to search for employees by first name, last name or job title.
+* Given an employee's ID, the API will be able to show the detailed employee information (including employee's project assignments).
 
 
 ### Technical Requirements
 
-1. The API should consume and output data in JSON format.
-2. The API should provide the service via the following URLs:
+* The API should consume and output data in JSON format.
+* The API should provide the service via the following URLs:
 
 Method | URL  |  Request Body  |  Response Body  |  Functionality
 ---    | ---  |  ---           |  ---            |  ---
-POST   | /api/employee | employee data | employee ID | Save new/existing employee information
-GET    | /api/employee/:id | none | employee data | Get detailed information for one employee
+POST   | /api/employee | employee data | employee ID | Save new/existing employee information with project assignments
+GET    | /api/employee/:id | none | employee data | Get detailed information (including project assignments) for one employee
 GET    | /api/employee?{firstname,lastname,title}=%query% | none | list of employees | Search for employees
 
-3. A successful API call will return HTTP 200 response code along with resulting data in response body.
-4. Any caught exception will result in HTTP 503 response code and null response body.
+* A successful API call will return HTTP 200 response code along with resulting data in response body.
+* Any caught exception will result in HTTP 503 response code and null response body.
 
 
 ### Extra Credits
 
-1. Create unit test for each data access object (DAO) method and automate testing during project build process.
-2. Add Spring Security dependency to the project and implement a simple role-based access control to all API URLs.
+* Create unit test for each data access object (DAO) method and automate testing during project build process.
+* Add Spring Security dependency to the project and implement a simple role-based access control to all API URLs.
 
