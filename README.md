@@ -5,7 +5,7 @@ You will be assigned a developer branch in this repository and you should do all
 1. Clone this repository to your computer. [How do I do it?](https://help.github.com/articles/cloning-a-repository/)
 2. Checkout the branch that is assigned to you, read the coding requirements in [README.md](https://github.com/talent-seeker/java-interview/tree/topic), and implement code changes in accordance with requirements.
 3. Commit all your code changes on your branch in your local repository.
-4. To submit your finished work, zip the whole "java-interview" folder and email the zip file to the hiring manager.
+4. To submit your finished work, zip the whole "java-interview" folder and email the zip file to the code reviewer.
 
 
 Happy coding!
