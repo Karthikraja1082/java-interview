@@ -15,53 +15,37 @@ public class Project implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(nullable = false)
     private String projectName;
+
     private Date deadline;
+
     private Date finishDate;
+    
     @ManyToMany(mappedBy="projects")
     @JsonIgnore
     private List<Employee> employees;
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) { this.id = id; }
 
-    public String getProjectName() {
-        return projectName;
-    }
+    public String getProjectName() { return projectName; }
 
-    public void setProjectName(String projectName) {
-        this.projectName = projectName;
-    }
+    public void setProjectName(String projectName) { this.projectName = projectName; }
 
-    public Date getDeadline() {
-        return deadline;
-    }
+    public Date getDeadline() { return deadline; }
 
-    public void setDeadline(Date deadline) {
-        this.deadline = deadline;
-    }
+    public void setDeadline(Date deadline) { this.deadline = deadline; }
 
-    public Date getFinishDate() {
-        return finishDate;
-    }
+    public Date getFinishDate() { return finishDate; }
 
-    public void setFinishDate(Date finishDate) {
-        this.finishDate = finishDate;
-    }
+    public void setFinishDate(Date finishDate) { this.finishDate = finishDate; }
 
-    public List<Employee> getEmployees() {
-        return employees;
-    }
+    public List<Employee> getEmployees() { return employees; }
 
-    public void setEmployees(List<Employee> employees) {
-        this.employees = employees;
-    }
+    public void setEmployees(List<Employee> employees) { this.employees = employees; }
 
     @Override
     public boolean equals(Object o) {

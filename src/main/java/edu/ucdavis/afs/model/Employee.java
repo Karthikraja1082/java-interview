@@ -14,92 +14,64 @@ public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(nullable = false)
     private String firstName;
+
     @Column(nullable = false)
     private String lastName;
+
     @Column(nullable = false)
     private String jobTitle;
+
     @Column(nullable = false)
     private Date hiredDate;
+
     private String email;
+
     private String phone;
+
     private String address;
+    
     @ManyToMany
     @JoinTable(name="EMPLOYEE_PROJECT")
     private List<Project> projects = new ArrayList<>();
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) { this.id = id; }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() { return firstName; }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-    public String getLastName() {
-        return lastName;
-    }
+    public String getLastName() { return lastName; }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public String getJobTitle() {
-        return jobTitle;
-    }
+    public String getJobTitle() { return jobTitle; }
 
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
-    }
+    public void setJobTitle(String jobTitle) { this.jobTitle = jobTitle; }
 
-    public Date getHiredDate() {
-        return hiredDate;
-    }
+    public Date getHiredDate() { return hiredDate; }
 
-    public void setHiredDate(Date hiredDate) {
-        this.hiredDate = hiredDate;
-    }
+    public void setHiredDate(Date hiredDate) { this.hiredDate = hiredDate; }
 
-    public String getEmail() {
-        return email;
-    }
+    public String getEmail() { return email; }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    public void setEmail(String email) { this.email = email; }
 
-    public String getPhone() {
-        return phone;
-    }
+    public String getPhone() { return phone; }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+    public void setPhone(String phone) { this.phone = phone; }
 
-    public String getAddress() {
-        return address;
-    }
+    public String getAddress() { return address; }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+    public void setAddress(String address) { this.address = address; }
 
-    public List<Project> getProjects() {
-        return projects;
-    }
+    public List<Project> getProjects() { return projects; }
 
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
-    }
+    public void setProjects(List<Project> projects) { this.projects = projects; }
 
     public void addProject(Project project) { this.projects.add(project); }
 
@@ -127,7 +99,7 @@ public class Employee implements Serializable {
         if (this.address != null && !this.address.equals(clone.getAddress())) {
             clone.setAddress(this.address);
         }
-        if (this.projects != null && this.projects.size() > 0 && !this.projects.equals(clone.getProjects())) {
+        if (this.projects != null && !this.projects.equals(clone.getProjects())) {
             clone.setProjects(this.projects);
         }
     }
