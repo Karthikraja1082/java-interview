@@ -33,7 +33,7 @@ Enhance the current application to implement a Restful API, which will provide t
 
 Method | URL  |  Request Body  |  Response Body  |  Functionality
 ---    | ---  |  ---           |  ---            |  ---
-POST   | /api/employee | employee data | employee ID | Save new/existing employee information with project assignments
+POST   | /api/employee | employee data | employee ID | Save new/existing employee information with or without project assignments
 GET    | /api/employee/:id | none | employee data | Get detailed information (including project assignments) for one employee
 GET    | /api/employee?{firstname,lastname,title}=%query% | none | list of employees | Search for employees
 
