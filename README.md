@@ -12,6 +12,10 @@ The application can be started in development mode with the following command:
 mvn spring-boot:run
 ```
 
+To verify the application is running, go to the Welcome page at [http://localhost:8080/welcome.htm](http://localhost:8080/welcome.htm)
+
+You can also access the backend H2 in-momory database console at [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+
 This application is an "oversimplified" project management system which contains only two domain models: [Employee](https://github.com/talent-seeker/java-interview/blob/development/src/main/java/edu/ucdavis/afs/model/Employee.java) and [Project](https://github.com/talent-seeker/java-interview/blob/development/src/main/java/edu/ucdavis/afs/model/Project.java). Before you proceed to accomplish the tasks below, please analyze the source files for [domain models](https://github.com/talent-seeker/java-interview/tree/development/src/main/java/edu/ucdavis/afs/model) and [data access object (DAO) interfaces](https://github.com/talent-seeker/java-interview/tree/development/src/main/java/edu/ucdavis/afs/dao).
 
 
@@ -39,6 +43,8 @@ GET    | /api/employee?{firstname,lastname,title}=%query% | none | list of emplo
 
 * A successful API call will return HTTP 200 response code along with resulting data in response body.
 * Any caught exception will result in HTTP 503 response code and null response body.
+
+*Note: URLs are relative server root URL. In development mode, server root URL is http://localhost:8080/*
 
 
 ### Extra Credits
