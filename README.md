@@ -4,7 +4,7 @@ UCD Java Developer Coding Test
 
 ### Introduction
 
-This is a Spring based Maven project, which has already auto-configured Spring MVC, Spring Data, JPA (with Hibernate provider), and H2 in-momory database.
+This is a Spring based Maven project, which has already auto-configured Spring MVC, Spring Data, JPA (with Hibernate provider), and H2 in-momory database with sample data.
 
 The application can be started in development mode with the following command:
 
